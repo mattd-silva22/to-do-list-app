@@ -1,0 +1,114 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #5972e2;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #5972e2;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+
+header {
+    margin: 50px 0px 0px 25px;
+    padding: 10px;
+}
+
+header h1,p {
+    margin: 10px;
+}
+
+header h1 {
+    color: white;
+}
+
+header p:nth-child(2) {
+    color: gold;
+}
+
+header p:nth-child(3) {
+    color: greenyellow;
+}
+
+header p:nth-child(4) {
+    color: brown;
+}
+
+header p:nth-child(5) {
+    color: gold;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+#text-input {
+    width: 400px;
+    height: 35px;
+    font-size: 1.5rem;
+}
+
+#add-btn {
+    height: 39px;
+    width: 100px;
+    border: 1px solid grey;
+}
+
+#list-display-area {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  
+  margin: 10px;
+}
+
+.list-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(109, 134, 246);
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    
+    
+}
+
+
+.remove-btn {
+    text-align: right;
+    color: red;
+    background:rgb(109, 134, 246) ;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+
+.task-complete {
+    text-decoration: line-through;
+    color: greenyellow;
+}
+
+
+@media ( max-width: 600px ) {
+    #list-display-area {
+        width: 300px;
+    }
+
+    #text-input {
+        width: 250px;
+        height: 35px;
+        font-size: 1.5rem;
+    }
+}
